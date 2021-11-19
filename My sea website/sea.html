@@ -1,0 +1,80 @@
+<html>
+<!DOCTYPE html>
+<head>
+<title> Ooooooh fish! </title>
+<link rel="stylesheet" href="colors-yay.css">
+<link rel="icon" sizes="16x16" href="Images/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<script>
+    var images = [
+        "Images/jellyfish.jpg",
+        "Images/orange_fish.jpg",
+        "Images/ray.jpg",
+        "Images/starfish.jpg",
+	"Images/yellow_jellyfish.jpg"
+    ];
+    function loadImg(i){
+        if(images[i] != undefined){
+            var img = new Image();
+            img.src = images[i];
+            img.onload = function(){ // detect if image has been loaded
+                i++;
+                loadImg(i);
+            }
+        }
+        if(images.length == i) // adding class 'loaded' when all images finished with loading
+            document.getElementsByClassName("slider")[0].classList.add("loaded");
+    }
+    loadImg(0);
+</script>
+</head>
+<body>
+
+
+
+<div id="slideshow"></div>
+<h1 id="rainbow-text"> <center> Deep Sea Fish! </center> </h1>
+<p> Aliens! I mean- deep sea creatures, pretty lovely. <span id="s1"> (You can click on a picture to jump to the animal) </span></p>
+<center><div id="group">
+<a href="#ghost"><img id="gf" src="Images/ghost_fish.jpg"></a>
+<a href="#yetis"><img id="gf" src="Images/yeti_crab.jpg"></a>
+<a href="#vamp"><img style="height: 200px;" id="gf" src="Images/vampire_squid.jpg"></a>
+<img id="gf" src="Images/anglerfish.jpg">
+</div></center>
+<p>Like you've read a thousand times before in any website or video, life in the depth of the ocean is very
+ difficult. So the adaptions and evolution these organisms have achieved is quite phenomenal.</p> <br><br>
+<p>Here are some not-so-cool <strike>lame</strike> ones. So enjoy these totally boring facts.</p>
+<br><br><br><br><br><br> 
+<h1>Ghost Fish:</h1> <br>
+<p id="ghost">Ghost fish are scaless fish. For some reason in every deep sea video, ghost fish are the
+wimps that nobody cares about. </p> <br> <br>
+<h1>Yeti Crab:</h1><br>
+<p id="yetis">Yeti crabs live near hydrothermal vents, that's it, that's what I know about them.</p><br><br>
+<h1>Vampire Squids:</h1><br>
+<p id="vamp">Cool squid bois that eat marine snow, which is fish poop and dead bodies.</p> <br><br><br><br>
+<center><h2>Images Credits</h2></center>
+<p>Photo by <a href="https://unsplash.com/@claudioguglieri?utm_source=unsplash&utm_medium
+=referral&utm_content=creditCopyText">Claudio Guglieri</a> on <a href="https://unsplash.com
+/s/photos/fish?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> <br>
+Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&utm_medium=referral&utm_
+content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/marine-life?utm_
+source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> <br>
+Photo by <a href="https://unsplash.com/@sanfrancisco?utm_source=unsplash&utm_medium=referral&utm_
+content=creditCopyText">Sasha • Stories</a> on <a href="https://unsplash.com/s/photos/marine-life?
+utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+Photo by <a href="https://unsplash.com/@fx24?utm_source=unsplash&utm_medium=referral&utm_content=
+creditCopyText">Fernando Jorge</a> on <a href="https://unsplash.com/s/photos/marine-life?utm_source
+=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> <br>
+Photo by <a href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_
+content=creditCopyText">Sigmund</a> on <a href="https://unsplash.com/s/photos/deep-sea?utm_source
+=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+<a target="_blank" href="https://icons8.com/icon/101695/fish">Fish</a> icon by <a target="_blank" 
+href="https://icons8.com">Icons8</a><br>
+Photo by <a href="https://unsplash.com/@melanieweidmann_photography?utm_source=unsplash&utm_medium
+=referral&utm_content=creditCopyText">Melanie Weidmann</a> on <a href="https://unsplash.com/s/photos/
+stars-in-the-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+</p>
+</body>
+</html>

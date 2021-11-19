@@ -1,0 +1,72 @@
+#slideshow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: animals 8s ease-in-out infinite;
+	animation-direction: alternate;
+	opacity: 0.8;
+	z-index: -1;
+	background-image: url('Images/orange_fish.jpg');
+	background-attachment: fixed;
+}
+
+#slideshow.loaded{ animation: slideshow 10s infinite; }
+
+@keyframes animals {
+	0% { background-image: url('Images/orange_fish.jpg'); }
+	25% { background-image: url('Images/jellyfish.jpg'); }
+	50% { background-image: url('Images/ray.jpg'); } 
+	75% { background-image: url('Images/starfish.jpg'); }
+	100% { background-image: url('Images/yellow_jellyfish.jpg'); }
+
+}
+
+body {
+	font-weight: bold;
+	background-image: url('Images/stars.jpg');
+	background-attachment: fixed;
+	color: white;
+}
+
+p{
+	font-size: 23px;
+	text-shadow: 4px 4px black;
+}
+
+#gf { transition: transform .2s; border-radius: 25px; padding: 10px;}
+#gf:hover { 
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#group{
+	display: inline-block;
+
+}
+
+#s1{
+	color: rgb(0, 255, 42);
+	font-size: 18px;
+}
+
+a {
+	color:cadetblue;
+}
+
+/*#rainbow-text {
+	-webkit-animation: rainbow 3s infinite;
+  }
+
+@keyframes rainbow {
+	0% {color: red;}
+	25% {color: rgb(255, 171, 14);}
+	45% {color: rgb(255, 255, 19);}
+	65% {color: rgb(0, 255, 0);}
+	75% {color: rgb(23, 23, 255)}
+	85% {color: rgb(149, 0, 255);}
+	100% {color: rgb(255, 55, 255);}*/
